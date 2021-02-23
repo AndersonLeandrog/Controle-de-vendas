@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - OLX</title>
+
+    <!--js-->
+    <script type="text/javascript" src="script/productCalc.js"></script>
+    <script type="text/javascript" src="script/platformSwitch.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="showPropierts()">
+    <div id="container">
+
+        <div class="top">
+            <p class="title">TechDrop</p>
+        </div>
+
+        <div class="fundoMenu">
+            <ul class="Menu">
+                <li class="Categoria">➡ Produto</li>
+                <li class="Item">➥ Meus Produtos</li>
+                <li class="subItem"><a href="facebook.html">➥ No facebook</a></li>
+                <li class="subItem"><a href="olx.html">➥ Na olx</a></li>
+                <li class="subItem"><a href="shopee.html">➥ Na shopee</a></li>
+                <li class="subItem"><a href="mercadolivre.html">➥ No mercado livre</a></li>
+
+                <li>➡ Produtos Vendidos</li>
+                <li>➡ Produtos Suspensos</li>
+                <li>•• Guia de como usar</li>
+
+                <div class="guiadeUso">
+                    <p>TechDrop é uma plataforma de gerenciamento de produtos, aqui você 
+                       pode inserir os seus produtos cadastrados em cada plataforma de venda
+                       como por exemplo: Facebook Market, OLX, Shopee etc...<br><br>
+                       Funciona assim, você cadastra um produto seu com base nos produtos que 
+                       você já tem anunciado em uma das plataformas citadas acima, tudo isso
+                       em um único site.<br><br>
+                       Aqui você gerencia todos os seus produtos e mantém o controle do seus produtos cadastrado
+                       em cada plataforma. 
+                    </p>
+                </div>
+            </ul>
+        </div>
+
+        <div class="platforms">
+                <div class="ml_slot" onclick="switchMLColor()">
+                    <p class="titleCard">ML</p>
+                    <p class="totalProducts"></p>
+                </div>
+
+            <div class="ox_slot" onclick="switchOXColor()" style="background: #7B68EE;">
+                <p class="titleCard">OLX</p>
+            </div>
+
+            <div class="sp_slot" onclick="switchSPColor()">
+                <p class="titleCard">SHP</p>
+            </div>
+
+            <div class="fb_slot" onclick="switchFBColor()">
+                <p class="titleCard">FB</p>
+            </div>
+
+            <div class="ot_slot">
+                <p class="titleCard">+</p>
+            </div>
+        </div>
+
+        <div class="list">
+            <table cellspacing="1" cellpadding="0" style="width: 100%; border: 0;">
+                <thead>
+                    <tr>
+                        <th width="70%">Produto</th>
+                        <th width="5%">Cd</th>
+                        <th width="10%">Cor</th>
+                        <th width="6%">Qtd.</th>
+                        <th width="9%">Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cooler dissipador CoolerMaster CM12V</td>
+                        <td class="produtos">1</td>
+                        <td>Preto</td>
+                        <td class="p">1</td>
+                        <td>25,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kit de carregamento p/XBOX360</td>
+                        <td class="produtos">1</td>
+                        <td>Preto</td>
+                        <td class="p">1</td>
+                        <td>50,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Memória RAM 1x1GB DDR2 800Mhz</td>
+                        <td class="produtos">1</td>
+                        <td>n/d</td>
+                        <td class="p">1</td>
+                        <td>15,00R$</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Processador Intel Celeron 430 1.80Ghz</td>
+                        <td class="produtos">1</td>
+                        <td>n/d</td>
+                        <td class="p">1</td>
+                        <td>12,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa Fax Modem p/PC x2 Entradas</td>
+                        <td class="produtos">1</td>
+                        <td>n/d</td>
+                        <td class="p">1</td>
+                        <td>15,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa para pc/TV Avermedia PCI</td>
+                        <td class="produtos">1</td>
+                        <td>n/d</td>
+                        <td class="p">1</td>
+                        <td>35,00R$</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Roteador D-link Modelo DIR-610</td>
+                        <td class="produtos">1</td>
+                        <td>Preto</td>
+                        <td class="p">1</td>
+                        <td>50,00R$</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>HD Maxxtor Serial ATA 80GB 7200RPM</td>
+                        <td class="produtos">1</td>
+                        <td>n/d</td>
+                        <td class="p">1</td>
+                        <td>35,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="produtos">1</td>
+                        <td></td>
+                        <td class="p"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - TechDrop</title>
+
+    <!--js-->
+    <script type="text/javascript" src="script/productCalc.js"></script>
+    <script type="text/javascript" src="script/platformSwitch.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="propriedadesPagina()">
+
+    <div id="container">
+        <div class="top">
+            <p class="title">TechDrop</p>
+        </div>
+
+        <div class="fundoMenu">
+            <ul class="Menu">
+                <li class="Categoria">➡ Produto</li>
+                <li class="Item">➥ Meus Produtos</li>
+                <li class="subItem"><a href="facebook.html">➥ No facebook</a></li>
+                <li class="subItem"><a href="olx.html">➥ Na olx</a></li>
+                <li class="subItem"><a href="shopee.html">➥ Na shopee</a></li>
+                <li class="subItem"><a href="mercadolivre.html">➥ No mercado livre</a></li>
+
+                <li>➡ Produtos Vendidos</li>
+                <li>➡ Produtos Suspensos</li>
+                <li>•• Guia de como usar</li>
+
+                <div class="guiadeUso">
+                    <p>TechDrop é uma plataforma de gerenciamento de produtos, aqui você 
+                       pode inserir os seus produtos cadastrados em cada plataforma de venda
+                       como por exemplo: Facebook Market, OLX, Shopee etc...<br><br>
+                       Funciona assim, você cadastra um produto seu com base nos produtos que 
+                       você já tem anunciado em uma das plataformas citadas acima, tudo isso
+                       em um único site.<br><br>
+                       Aqui você gerencia todos os seus produtos e mantém o controle do seus produtos cadastrado
+                       em cada plataforma. 
+                    </p>
+                </div>
+            </ul>
+        </div>
+
+        <div class="platforms">
+                <div class="ml_slot" onclick="switchMLColor()">
+                    <p class="titleCard">ML</p>
+                    <p class="totalProducts"></p>
+                </div>
+
+            <div class="ox_slot" onclick="switchOXColor()">
+                <p class="titleCard">OLX</p>
+            </div>
+
+            <div class="sp_slot" onclick="switchSPColor()">
+                <p class="titleCard">SHP</p>
+            </div>
+
+            <div class="fb_slot" onclick="switchFBColor()">
+                <p class="titleCard">FB</p>
+            </div>
+
+            <div class="ot_slot">
+                <p class="titleCard">+</p>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="texto">
+                Gerencie o seu estoque de produtos em qualquer plataforma a qualquer hora, insira produtos e mantenha atualizada a sua lista de gerenciamento.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

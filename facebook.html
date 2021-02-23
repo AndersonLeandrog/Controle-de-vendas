@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - Facebook</title>
+
+    <!--js-->
+    <script type="text/javascript" src="script/productCalc.js"></script>
+    <script type="text/javascript" src="script/platformSwitch.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="showPropierts()">
+    <div id="container">
+
+        <div class="top">
+            <p class="title">TechDrop</p>
+        </div>
+
+        <div class="fundoMenu">
+            <ul class="Menu">
+                <li class="Categoria">➡ Produto</li>
+                <li class="Item">➥ Meus Produtos</li>
+                <li class="subItem"><a href="facebook.html">➥ No facebook</a></li>
+                <li class="subItem"><a href="olx.html">➥ Na olx</a></li>
+                <li class="subItem"><a href="shopee.html">➥ Na shopee</a></li>
+                <li class="subItem"><a href="mercadolivre.html">➥ No mercado livre</a></li>
+
+                <li>➡ Produtos Vendidos</li>
+                <li>➡ Produtos Suspensos</li>
+                <li>•• Guia de como usar</li>
+
+                <div class="guiadeUso">
+                    <p>TechDrop é uma plataforma de gerenciamento de produtos, aqui você 
+                       pode inserir os seus produtos cadastrados em cada plataforma de venda
+                       como por exemplo: Facebook Market, OLX, Shopee etc...<br><br>
+                       Funciona assim, você cadastra um produto seu com base nos produtos que 
+                       você já tem anunciado em uma das plataformas citadas acima, tudo isso
+                       em um único site.<br><br>
+                       Aqui você gerencia todos os seus produtos e mantém o controle do seus produtos cadastrado
+                       em cada plataforma. 
+                    </p>
+                </div>
+            </ul>
+        </div>
+
+        <div class="platforms">
+                <div class="ml_slot" onclick="switchMLColor()">
+                    <p class="titleCard">ML</p>
+                    <p class="totalProducts"></p>
+                </div>
+
+            <div class="ox_slot" onclick="switchOXColor()">
+                <p class="titleCard">OLX</p>
+            </div>
+
+            <div class="sp_slot" onclick="switchSPColor()">
+                <p class="titleCard">SHP</p>
+            </div>
+
+            <div class="fb_slot" onclick="switchFBColor()" style="background: #4169E1;">
+                <p class="titleCard">FB</p>
+            </div>
+
+            <div class="ot_slot">
+                <p class="titleCard">+</p>
+            </div>
+        </div>
+
+        <div class="list">
+            <table cellspacing="1" cellpadding="0" style="width: 100%; border: 0;">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Cor</th>
+                        <th>Qtd.</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cabo de dados Lightning para USB iPhone</td>
+                        <td>Laranja</td>
+                        <td class="sq1">1</td>
+                        <td>10,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cabo series lelong para DVD/TV e Consoles</td>
+                        <td>Preto</td>
+                        <td class="sq4">5</td>
+                        <td>10,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Capinha Soft-Rubber p/iPhone 5, 6 e 6s</td>
+                        <td>n/d</td>
+                        <td class="sq5">5</td>
+                        <td>10,50R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kit de carregamento p/XBOX360</td>
+                        <td>Preto</td>
+                        <td class="sq7">1</td>
+                        <td>50,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Memória RAM DDR2 1x1GB p/Notebook</td>
+                        <td>Verde</td>
+                        <td class="sq8">1</td>
+                        <td>15,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa de TV Avermedia PCI p/PC</td>
+                        <td>Verde</td>
+                        <td class="sq10">1</td>
+                        <td>35,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa Fax/Modem PC x2 Entradas</td>
+                        <td>n/d</td>
+                        <td class="sq11">2</td>
+                        <td>35,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa Riser-Card Blue-Margarita REV 2.0</td>
+                        <td>n/d</td>
+                        <td class="sq12">1</td>
+                        <td>50,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td>HD Maxxtor Serial ATA 80GB 7200RPM</td>
+                        <td>n/d</td>
+                        <td class="sq15">1</td>
+                        <td>35,00R$</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="sq16"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
