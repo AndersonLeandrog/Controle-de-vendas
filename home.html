@@ -6,6 +6,7 @@
     <title>Controle de Vendas - TechDrop</title>
 
     <!--js-->
+    <script type="text/javascript" src="script/loadPage.js"></script>
     <script type="text/javascript" src="script/productCalc.js"></script>
     <script type="text/javascript" src="script/platformSwitch.js"></script>
 
@@ -14,11 +15,13 @@
 
 </head>
 
-<body onload="propriedadesPagina()">
-
+<body onload="pageNotify()">
+    
     <div id="container">
         <div class="top">
-            <p class="title">TechDrop</p>
+            <a href="home.html">
+                <p class="title">TechDrop</p>
+            </a>
         </div>
 
         <div class="fundoMenu">
@@ -49,8 +52,8 @@
         </div>
 
         <div class="platforms">
-                <div class="ml_slot" onclick="switchMLColor()">
-                    <p class="titleCard">ML</p>
+                <div class="fb_slot" onclick="switchFBColor()">
+                    <p class="titleCard">Facebook</p>
                     <p class="totalProducts"></p>
                 </div>
 
@@ -59,11 +62,11 @@
             </div>
 
             <div class="sp_slot" onclick="switchSPColor()">
-                <p class="titleCard">SHP</p>
+                <p class="titleCard">Shopee</p>
             </div>
 
-            <div class="fb_slot" onclick="switchFBColor()">
-                <p class="titleCard">FB</p>
+            <div class="ml_slot" onclick="switchMLColor()">
+                <p class="titleCard">Mercado Livre</p>
             </div>
 
             <div class="ot_slot">
