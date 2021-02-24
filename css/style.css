@@ -23,7 +23,7 @@ li {
 }
 
     li:hover {
-        background: rgb(93, 79, 146);
+        background: rgb(119, 119, 255); 
     }
 
 img {
@@ -122,19 +122,10 @@ canvas {
         padding: 23px 0px 0px 0px;
     }
 
-        #container .platforms .ml_slot {
+        #container .platforms .fb_slot {
             float: left;
             width: 65px;
             height: 65px;
-            border-radius: 50px;
-            background: #3d3d3d;
-        }
-
-        #container .platforms .sp_slot {
-            float: left;
-            width: 65px;
-            height: 65px;
-            margin-left: 5px;
             border-radius: 50px;
             background: #3d3d3d;
         }
@@ -148,7 +139,16 @@ canvas {
             background: #3d3d3d;
         }
 
-        #container .platforms .fb_slot {
+        #container .platforms .sp_slot {
+            float: left;
+            width: 65px;
+            height: 65px;
+            margin-left: 5px;
+            border-radius: 50px;
+            background: #3d3d3d;
+        }
+
+        #container .platforms .ml_slot {
             float: left;
             width: 65px;
             height: 65px;
@@ -182,7 +182,7 @@ canvas {
         height: 530px;
         margin: 2.5% 0px 0px 2.5%;
         border-radius: 3px;
-        background:url('https://i.ibb.co/Mn0zCJs/banner.jpg');
+        background:url('img/banner.png');
     }
         /*em edição*/
         #container .banner .texto {
@@ -191,7 +191,7 @@ canvas {
             width: 80%;
             
             bottom: 0;
-            background:  rgb(119, 119, 255);
+            background: rgb(119, 119, 255); 
             font-size: 2em;
             text-shadow: #333333 1px 1px 1px;
             padding: 0px 15px 20px 15px;
@@ -254,6 +254,10 @@ canvas {
                     border-left: 1px solid white;
                     background: #333333;
                 }
+
+                    .Menu .guiadeUso:hover {
+                        border-left: 1px solid rgb(119, 119, 255);
+                    }
 
                     .Menu .guiadeUso p {
                         font-size: 0.9em;
